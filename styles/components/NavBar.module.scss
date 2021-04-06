@@ -1,0 +1,37 @@
+@import "../common";
+
+.nav {
+  display: flex;
+  background-color: $primary;
+  justify-content: center;
+  padding: 8px 0 8px;
+  width: 100%;
+
+  .container {
+    display: flex;
+    max-width: $screen-lg-min;
+    width: 100%;
+  }
+
+  .search {
+    background-color: $white;
+    display: flex;
+    flex-grow: 1;
+    margin-left: 35px;
+
+    input {
+      border: 0;
+      flex-grow: 1;
+      padding: 8px;
+    }
+
+    .btn {
+      background-color: $grey;
+      border: 0;
+
+      div::before {
+        content: "\EA27";
+      }
+    }
+  }
+}
