@@ -1,9 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Item Should match snapshot (it renders correctly) 1`] = `
-<article
-  onClick={[Function]}
->
+exports[`Description Should match snapshot (it renders correctly) 1`] = `
+<main>
   <div>
     <div
       style={
@@ -30,7 +28,7 @@ exports[`Item Should match snapshot (it renders correctly) 1`] = `
           alt=""
           aria-hidden={true}
           role="presentation"
-          src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTgwIiBoZWlnaHQ9IjE4MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2ZXJzaW9uPSIxLjEiLz4="
+          src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjgwIiBoZWlnaHQ9IjY4MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2ZXJzaW9uPSIxLjEiLz4="
           style={
             Object {
               "border": "none",
@@ -44,10 +42,9 @@ exports[`Item Should match snapshot (it renders correctly) 1`] = `
       </div>
       <noscript>
         <img
-          alt=""
           decoding="async"
           src="/imgs/search.svg"
-          srcSet="/_next/image?url=%2Fimgs%2Fsearch.svg&w=256&q=75 1x, /_next/image?url=%2Fimgs%2Fsearch.svg&w=384&q=75 2x"
+          srcSet="/_next/image?url=%2Fimgs%2Fsearch.svg&w=750&q=75 1x, /_next/image?url=%2Fimgs%2Fsearch.svg&w=1920&q=75 2x"
           style={
             Object {
               "border": "none",
@@ -73,7 +70,6 @@ exports[`Item Should match snapshot (it renders correctly) 1`] = `
         />
       </noscript>
       <img
-        alt=""
         decoding="async"
         src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
         style={
@@ -101,19 +97,43 @@ exports[`Item Should match snapshot (it renders correctly) 1`] = `
       />
     </div>
     <div>
-      <div>
-        <h2>
-          $ 
-          0
-        </h2>
+      <span>
+        Nuevo
+         - 
+        0
+         vendidos
+      </span>
+      <h1
+        className="h2"
+      >
+        Vestido Holi- Modelo Johnny Cash- Ladrillo- Talle 1
+      </h1>
+      <h2
+        className="h1"
+      >
+        $ 
+        5999
         <span>
-          
+          00
         </span>
-      </div>
-      <p>
-        
-      </p>
+      </h2>
+      <button
+        className="button"
+      >
+        Comprar
+      </button>
     </div>
   </div>
-</article>
+  <div>
+    <h3>
+      Descripción del producto
+    </h3>
+    <p>
+      Vestido Holi
+Modelo Johnny Cash
+Color ladrillo
+Talle 1
+    </p>
+  </div>
+</main>
 `;

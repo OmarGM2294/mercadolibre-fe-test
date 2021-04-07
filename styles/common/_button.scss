@@ -1,0 +1,13 @@
+.button {
+  background-color: $dodger-blue;
+  border: 0;
+  border-radius: 4px;
+  color: $white;
+  max-width: 200px;
+  padding: $min-space/2;
+  width: 100%;
+
+  &:focus {
+    outline: 0;
+  }
+}

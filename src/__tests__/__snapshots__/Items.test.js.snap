@@ -2,7 +2,9 @@
 
 exports[`Items Should match snapshot (it renders correctly) 1`] = `
 <main>
-  <article>
+  <article
+    onClick={[Function]}
+  >
     <div>
       <div
         style={
@@ -115,7 +117,9 @@ exports[`Items Should match snapshot (it renders correctly) 1`] = `
       </div>
     </div>
   </article>
-  <article>
+  <article
+    onClick={[Function]}
+  >
     <div>
       <div
         style={
