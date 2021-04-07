@@ -1,34 +1,69 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
-
 ## Getting Started
 
-First, run the development server:
+First use the recommended node version:
 
 ```bash
-npm run dev
+nvm use
+```
+
+After that, install all dependencies:
+
+```bash
+npm i
 # or
-yarn dev
+yarn install
+```
+
+Then, build the project:
+
+```bash
+npm run build
+# or
+yarn build
+```
+
+And run the project:
+
+```bash
+npm run start
+# or
+yarn start
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+## Tools
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+This project was made with:
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+- [https://nextjs.org](NextJS)
+- [https://babeljs.io](Babel)
+- [https://jestjs.io](Jest)
+- [https://enzymejs.github.io/enzyme/](Enzyme)
+- [https://sass-lang.com/](Sass)
 
-## Learn More
+## Important notes
 
-To learn more about Next.js, take a look at the following resources:
+### Optimization
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+This project has been passed throught Lighthouse audits, values are almost perfect, things missing are related to server configuration.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+### Working flow
 
-## Deploy on Vercel
+The working flow is based in git flow with pre commit hooks (including prettier, jest tests and linter), also making a pull request template for each branch to be merged.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### Server side rendering
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Server side rendering is been used to be more secure with api requests (api requets are made to get the necessary data).
+
+### Images
+
+Images were been optimized and each of them are been use with source set to improve performance in the site.
+
+### Mobile
+
+Mobile was immplemented and optimized for each view
+
+### Sass
+
+Styles were maded with SCSS to improve the code with imports, variables and mixins.
