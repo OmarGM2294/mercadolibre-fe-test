@@ -11,10 +11,11 @@ const NavBar = () => {
           <a className={styles.link}>
             <Image
               className={styles.logo}
-              src="https://http2.mlstatic.com/frontend-assets/ui-navigation/5.14.3/mercadolibre/logo__small.png"
+              src="/imgs/logo.png"
               alt="logo"
               width={44}
               height={32}
+              quality={100}
             />
           </a>
         </Link>
