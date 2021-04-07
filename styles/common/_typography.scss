@@ -1,5 +1,26 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap");
+@import "index";
 
 body {
   font-family: "Lato", sans-serif;
+}
+
+h2 {
+  color: $mine-shaft;
+  font-size: 24px;
+  font-weight: normal;
+}
+
+p {
+  color: $mine-shaft;
+  font-size: 14px;
+
+  @include md {
+    font-size: 18px;
+  }
+}
+
+span {
+  color: $mine-shaft;
+  font-size: 12px;
 }

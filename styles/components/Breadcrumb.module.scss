@@ -1,0 +1,26 @@
+@import "../common";
+
+.breadcrumb {
+  padding: $min-space;
+  margin: 0 auto;
+  max-width: $screen-lg-min;
+
+  .container {
+    display: inline-block;
+
+    &:last-of-type {
+      span {
+        font-weight: bold;
+      }
+    }
+  }
+
+  span {
+    color: $dove-gray;
+    font-size: 14px;
+  }
+
+  .separator {
+    margin: 0 8px;
+  }
+}

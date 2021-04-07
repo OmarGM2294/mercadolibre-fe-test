@@ -1,0 +1,55 @@
+@import "../common";
+
+.item {
+  padding: $min-space $min-space 0 $min-space;
+}
+
+.container {
+  display: flex;
+  border-bottom: 1px solid $gallery;
+  padding-bottom: $min-space;
+}
+
+.image {
+  border-radius: 4px;
+  object-fit: contain;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  margin-left: $min-space;
+
+  p {
+    margin: 0;
+    max-width: 100%;
+
+    @include md {
+      max-width: 50%;
+    }
+  }
+}
+
+.status {
+  align-items: center;
+  display: flex;
+  margin: $min-space 0 8px;
+
+  @include md {
+    margin: $min-space 0 $max-space;
+  }
+
+  h2 {
+    margin: 0;
+    width: 50%;
+
+    @include md {
+      width: 80%;
+    }
+  }
+
+  span {
+    color: $dove-gray;
+  }
+}
