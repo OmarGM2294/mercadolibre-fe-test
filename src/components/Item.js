@@ -20,7 +20,20 @@ const Item = (props) => {
         />
         <div className={styles.info}>
           <div className={styles.status}>
-            <h2>$ {props.data.price.amount}</h2>
+            <div className={styles.values}>
+              <h2>
+                $ {props.data.price.amount}
+              </h2>
+              { props.data.free_shipping ?
+                <Image
+                  className={styles.shipping}
+                  src="/imgs/shipping.png"
+                  alt="Shipping"
+                  height={20}
+                  width={20}
+                />
+              : null }
+            </div>
             <span>{props.data.state_name}</span>
           </div>
           <p>{props.data.title}</p>
