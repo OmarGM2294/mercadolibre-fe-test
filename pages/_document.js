@@ -11,6 +11,7 @@ class MyDocument extends Document {
       <Html lang="es">
         <Head>
           <meta name="description" content="Prueba de Front End Mercadolibre - Omar Gonzalez"/>
+          <meta name="viewport" content="initial-scale=1.0, width=device-width" />
         </Head>
         <body>
           <Main />

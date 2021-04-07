@@ -1,5 +1,7 @@
 @import "./common/typography";
+@import "./common/colors";
 
 body {
   margin: 0;
+  background: $gallery;
 }
