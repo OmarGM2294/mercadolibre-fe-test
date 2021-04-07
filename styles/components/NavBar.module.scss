@@ -9,28 +9,58 @@
 
   .container {
     display: flex;
+    height: 48px;
+    margin: 0 8px;
     max-width: $screen-lg-min;
     width: 100%;
+
+    @include md {
+      height: 35px;
+      margin: 0 16px;
+    }
+  }
+
+  .link {
+    align-items: center;
+    display: flex;
+  }
+
+  .logo {
+    vertical-align: middle;
   }
 
   .search {
     background-color: $white;
     display: flex;
     flex-grow: 1;
-    margin-left: 35px;
+    margin-left: 15px;
+
+    @include md {
+      margin-left: 35px;
+    }
 
     input {
       border: 0;
       flex-grow: 1;
-      padding: 8px;
+      padding: 8px 16px;
+
+      &:focus {
+        outline: 0;
+      }
     }
 
     .btn {
       background-color: $grey;
       border: 0;
+      padding: 0 8px;
+      width: 48px;
 
-      div::before {
-        content: "\EA27";
+      @include md {
+        width: inherit;
+      }
+
+      &:focus {
+        outline: 0;
       }
     }
   }
