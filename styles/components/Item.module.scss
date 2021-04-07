@@ -41,13 +41,18 @@
     margin: $min-space 0 $max-space;
   }
 
-  h2 {
-    margin: 0;
-    width: 50%;
+  .values {
+    align-items: center;
+    display: flex;
+    flex-basis: 50%;
 
     @include md {
-      width: 80%;
+      flex-basis: 80%;
     }
+  }
+
+  h2 {
+    margin-right: $min-space/2;
   }
 
   span {

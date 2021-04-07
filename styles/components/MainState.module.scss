@@ -1,0 +1,17 @@
+@import "../common";
+
+.container {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  height: 75vh;
+  justify-content: center;
+  width: 100%;
+
+  h1 {
+    font-size: 30px;
+    line-height: 46px;
+    margin-top: $max-space;
+    text-align: center;
+  }
+}
