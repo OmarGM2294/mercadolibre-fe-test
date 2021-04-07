@@ -5,22 +5,36 @@ body {
   font-family: "Lato", sans-serif;
 }
 
-h2 {
+h1,
+.h1 {
+  color: $mine-shaft;
+  font-size: 46px;
+  font-weight: normal;
+  margin: 0;
+}
+
+h2,
+.h2 {
   color: $mine-shaft;
   font-size: 24px;
   font-weight: normal;
+  margin: 0;
 }
 
-p {
+p,
+.p {
   color: $mine-shaft;
   font-size: 14px;
+  margin: 0;
 
   @include md {
     font-size: 18px;
   }
 }
 
-span {
+span,
+.p {
   color: $mine-shaft;
   font-size: 12px;
+  margin: 0;
 }

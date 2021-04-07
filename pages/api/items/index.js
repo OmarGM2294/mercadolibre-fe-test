@@ -7,17 +7,22 @@ export default function handler(req, res) {
         author: {
           name: 'Omar',
           lastname: 'Gonzalez',
-        }
+        },
+        items: [],
+        categories: [],
       }
       return fetcher(`https://api.mercadolibre.com/sites/MLA/search?q=${req.query.search}`)
         .then(data => {
+          if (data.results.length === 0) {
+            return { path_from_root: [] }
+          }
           result.items = data.results.map((item => ({
             id: item.id,
             title: item.title,
             price: {
               currency: item.currency_id,
-              amount: item.price,
-              decimals: 0
+              amount: Number(item.price.toFixed()),
+              decimals: item.price.toString().includes('.') ? Number(item.price.toString().split(".")[1]) : 0,
             },
             picture: item.thumbnail,
             condition: item.condition,
@@ -31,10 +36,12 @@ export default function handler(req, res) {
           return fetcher(`https://api.mercadolibre.com/categories/${category_id}`)
         })
         .then(data => {
-          result.categories = data.path_from_root.map(category => category.name)
-          res.status(200).json(result)
+          if(data.path_from_root.length > 0) {
+            result.categories = data.path_from_root.map(category => category.name)
+          }
+          return res.status(200).json(result)
         })
-        .catch(e => console.log(e))
+        .catch(e => res.status(500).json('Algo salio mal'))
     default:
       res.setHeader('Allow', ['GET'])
       res.status(405).end(`Method ${method} Not Allowed`)

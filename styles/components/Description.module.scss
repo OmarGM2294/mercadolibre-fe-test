@@ -1,0 +1,60 @@
+@import "../common";
+
+.description {
+  background-color: $white;
+  border-radius: 4px;
+  max-width: $screen-lg-min;
+  margin: 0 auto $max-space auto;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  padding: $max-space $max-space 0 $max-space;
+
+  @include md {
+    flex-direction: row;
+  }
+}
+
+.image {
+  object-fit: contain;
+}
+
+.info {
+  @include md {
+    padding-left: $max-space;
+  }
+
+  span {
+    font-size: 14px;
+  }
+
+  h1 {
+    margin-top: $min-space;
+  }
+
+  h2 {
+    margin: $max-space 0;
+
+    span {
+      font-size: 20px;
+      position: absolute;
+      transform: translate(5px, 25%);
+    }
+  }
+}
+
+.productDescription {
+  padding: 0 $max-space $max-space $max-space;
+
+  h3 {
+    font-size: 28px;
+    margin-bottom: $max-space;
+  }
+
+  p {
+    color: $dusty-gray;
+    font-size: 16px;
+  }
+}
